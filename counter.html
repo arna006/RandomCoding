@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <h3>This is an counter!</h3>
+
+    <p id="counter-p">0</p>
+
+    <input type="button" id="plus-btn" value="Increase">
+    <input type="button" id="reset-btn" value="Reset">
+    <input type="button" id="minus-btn" value="Decrease">
+
+
+    <script>
+
+        counter = 0;
+
+        var counterP = document.getElementById("counter-p");
+        var plusBtn = document.getElementById("plus-btn");
+        var minusBtn = document.getElementById("minus-btn");
+        var resetBtn = document.getElementById("reset-btn");
+
+        plusBtn.onclick = increaseNumber;
+        minusBtn.onclick = decreaseNumber;
+        resetBtn.onclick = resetNumber;
+
+        function increaseNumber() {
+            counter++;
+            counterP.innerHTML = counter;
+
+            if (counter >= 0) {
+                counterP.style.color = "green";
+            }
+        }
+
+        function decreaseNumber() {
+            counter--;
+            counterP.innerHTML = counter;
+
+            if (counter < 0) {
+                counterP.style.color = "red";
+            }
+        }
+
+
+        function resetNumber() {
+            counter = 0;
+            counterP.innerHTML = counter;
+            counterP.style.color = "green";
+        }
+
+    </script>
+
+</body>
+
+</html>

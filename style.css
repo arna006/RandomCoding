@@ -1,0 +1,43 @@
+body {
+    text-align: center; /* Center the content horizontally */
+}
+
+h3 {
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#counter-p {
+    font-size: 70px;
+    text-align: center;
+    color: green;
+}
+
+#plus-btn {
+    height: 100px;
+    width: 200px;
+    font-size: xx-large;
+    margin: 0 10px; /* Add some horizontal spacing between the buttons */
+    display: inline-block;
+    border-radius: 30px;
+}
+#reset-btn {
+    height: 100px;
+    width: 200px;
+    font-size: xx-large;
+    margin: 0 10px; /* Add some horizontal spacing between the buttons */
+    display: inline-block;
+    border-radius: 30px;
+
+}
+#minus-btn{
+    height: 100px;
+    width: 200px;
+    font-size: xx-large;
+    margin: 0 10px; /* Add some horizontal spacing between the buttons */
+    display: inline-block;
+    border-radius: 30px;
+
+}
+
